@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Checkin</string>
+    <string name="bigtext">Check in everyday to get lots of star points. Send star gifts with star points!</string>
+    <string name="smalltxt">Gain more star points by checking in everyday!</string>
+</resources>

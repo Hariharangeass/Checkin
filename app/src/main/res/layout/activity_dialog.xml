@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="25dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="X"
+        android:id="@+id/xview"
+        android:onClick="close"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Check In"
+        android:id="@+id/heading"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/xview"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bigtext"
+        android:id="@+id/bigtext"
+        android:layout_below="@id/heading"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/bigtext"
+        android:id="@+id/firstrow"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/star"
+            android:layout_width="60dp"
+            android:layout_height="120dp" />
+
+        <ImageView
+            android:src="@drawable/star"
+            android:layout_width="60dp"
+            android:layout_height="120dp" />
+
+        <ImageView
+            android:src="@drawable/star"
+            android:layout_width="60dp"
+            android:layout_height="120dp" />
+
+        <ImageView
+            android:src="@drawable/star"
+            android:layout_width="60dp"
+            android:layout_height="120dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/firstrow"
+        android:id="@+id/secondrow"
+        android:paddingLeft="55dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="120dp"
+            android:src="@drawable/star"/>
+
+        <ImageView
+            android:src="@drawable/star"
+            android:layout_width="60dp"
+            android:layout_height="120dp" />
+
+        <ImageView
+            android:src="@drawable/star"
+            android:layout_width="60dp"
+            android:layout_height="120dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="CHECK IN"
+        android:onClick="checkin"
+        android:layout_alignParentBottom = "true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
